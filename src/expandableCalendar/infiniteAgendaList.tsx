@@ -46,7 +46,7 @@ const InfiniteAgendaList = ({
   renderItem,
   onEndReached,
   onEndReachedThreshold,
-  scrollToSectionDelay,
+  scrollToSectionDelay = 0,
   ...others
 }: Omit<AgendaListProps, 'viewOffset'>) => {
   const {date, updateSource, setDate} = useContext(Context);
